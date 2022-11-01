@@ -14,7 +14,7 @@
         <lastBuildDate>Tue, 01 Nov 2022 19:58:40 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/11/01/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/LongAddr/</guid>
-            <title>LongAddr源码分析</title>
+            <title>LongAdder源码分析</title>
             <link>https://guyouwyh.github.io/guyouwyh/2022/11/01/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/LongAddr/</link>
             <category term="后端" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
@@ -22,9 +22,9 @@
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
             <pubDate>Tue, 01 Nov 2022 19:58:40 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h1&gt;
-&lt;p&gt;LongAddr 的 JDK8 种提供的一个针对 Long 类型的原子操作。&lt;/p&gt;
+&lt;p&gt;LongAdder 的 JDK8 种提供的一个针对 Long 类型的原子操作。&lt;/p&gt;
 &lt;h1 id=&#34;核心原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心原理&#34;&gt;#&lt;/a&gt; 核心原理&lt;/h1&gt;
-&lt;p&gt;先说一下为什么要出现这么类？明明有 AtomicLong, 但是实际上，AtomicLong 在高并发下性能是不够的，还可以再优化。LongAddr 也就应运而生了。&lt;br /&gt;
+&lt;p&gt;先说一下为什么要出现这么类？明明有 AtomicLong, 但是实际上，AtomicLong 在高并发下性能是不够的，还可以再优化。LongAdder 也就应运而生了。&lt;br /&gt;
 其核心思想是:&lt;br /&gt;
 &lt;ins&gt; 将一个变量拆成多个变量。把一个 Long 类型拆成一个 base 变量外加多个 Cell。当多个线程并发累加的时候，如果并发度低，就直接加到 base 变量上，如果并发度高，就平摊在 Cell 上。最后取值的时候再将 base 和 Cell 求 sum 运算。&lt;/ins&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/guyouwyh/picture/main/20221101201303.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -56,7 +56,7 @@ Cell 其实是 LongAdder 父类 Strip64 中的一个内部类，源码如下:&lt
 &lt;li&gt;第三个分支，说明有其他线程正在第二个分支初始化，继续尝试能不能加到 base 上，如果不能则继续循环进入到第一个分支。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;LongAddr 中，有一个计组知识，即缓存伪共享和缓存行填充，jdk8 中提供了一个 Contented 注解就是先了缓存行填充，LongAddr 的思想有一种拆分的思想，其中不仅大量运用了 CAS, 并且还有一些小的优化，比如容量是 2 的整数幂可以使用 &amp;amp; 代替 %, 加快运算。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LongAdder 中，有一个计组知识，即缓存伪共享和缓存行填充，jdk8 中提供了一个 Contented 注解就是先了缓存行填充，LongAddr 的思想有一种拆分的思想，其中不仅大量运用了 CAS, 并且还有一些小的优化，比如容量是 2 的整数幂可以使用 &amp;amp; 代替 %, 加快运算。&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
