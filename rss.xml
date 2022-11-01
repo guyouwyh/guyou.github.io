@@ -14,8 +14,12 @@
         <lastBuildDate>Tue, 01 Nov 2022 12:10:48 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/11/01/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/JMM%E5%92%8Cvolatile%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
-            <title></title>
+            <title>JMM和volatile的一些理解</title>
             <link>https://guyouwyh.github.io/guyouwyh/2022/11/01/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/JMM%E5%92%8Cvolatile%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
+            <category term="后端" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/" />
+            <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
+            <category term="Java并发" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/" />
+            <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
             <pubDate>Tue, 01 Nov 2022 12:10:48 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;jmm是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jmm是什么&#34;&gt;#&lt;/a&gt; JMM 是什么？&lt;/h1&gt;
 &lt;p&gt;对于学 Java 多线程的人来说，一定听说过 JMM, 那么 JMM 到底是什么呢？JMM 全称 (&lt;ins&gt;Java Memory Model&lt;/ins&gt;) 即 Java 内存模型。它是 Java 的一套规范，对上，是 JVM 和开发者之间的约定，对下，是 JVM 和编译器、CPU 之间的约定。&lt;/p&gt;
