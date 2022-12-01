@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://guyouwyh.github.io/guyouwyh/2022/12/01/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E8%B7%B3%E8%A1%A8/</loc>
+    
+    <lastmod>2022-12-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://guyouwyh.github.io/guyouwyh/2022/11/02/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ThreadLocal%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</loc>
     
     <lastmod>2022-11-03</lastmod>
@@ -74,6 +81,13 @@
 
   
   <url>
+    <loc>https://guyouwyh.github.io/guyouwyh/tags/%E8%B7%B3%E8%A1%A8/</loc>
+    <lastmod>2022-12-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://guyouwyh.github.io/guyouwyh/tags/Java/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>daily</changefreq>
@@ -88,6 +102,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://guyouwyh.github.io/guyouwyh/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2022-12-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/</loc>
