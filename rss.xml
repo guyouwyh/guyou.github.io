@@ -10,15 +10,15 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 01 Dec 2022 15:00:21 +0800</pubDate>
-        <lastBuildDate>Thu, 01 Dec 2022 15:00:21 +0800</lastBuildDate>
+        <pubDate>Thu, 01 Dec 2022 15:30:06 +0800</pubDate>
+        <lastBuildDate>Thu, 01 Dec 2022 15:30:06 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/12/01/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E8%B7%B3%E8%A1%A8/</guid>
             <title>【数据结构】-跳表的实现</title>
             <link>https://guyouwyh.github.io/guyouwyh/2022/12/01/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E8%B7%B3%E8%A1%A8/</link>
             <category term="数据结构" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" />
             <category term="跳表" scheme="https://guyouwyh.github.io/guyouwyh/tags/%E8%B7%B3%E8%A1%A8/" />
-            <pubDate>Thu, 01 Dec 2022 15:00:21 +0800</pubDate>
+            <pubDate>Thu, 01 Dec 2022 15:30:06 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;跳表的思想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#跳表的思想&#34;&gt;#&lt;/a&gt; 跳表的思想&lt;/h1&gt;
 &lt;p&gt;跳表的思想实际上与二分的思想类似，先介绍一下单链表，对于单链表来实说，查找的时间复杂度为 O (n), 如果是数组的话，查找的时间复杂度可以优化为 O (logn), 因为数组可以直接通过下标进行访问，但是链表不行，那么试着思考能不能建立多条链表来实现 O (logn) 查找呢？这就是跳表的思想，使用多条链表，用空间换时间的思想，去实现 logn 时间复杂度的查找。&lt;br /&gt;
 下图为跳表的数据结构图:&lt;br /&gt;
@@ -53,14 +53,14 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/11/02/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ThreadLocal%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</guid>
+            <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/11/03/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ThreadLocal%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</guid>
             <title>ThreadLocal源码分析</title>
-            <link>https://guyouwyh.github.io/guyouwyh/2022/11/02/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ThreadLocal%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</link>
+            <link>https://guyouwyh.github.io/guyouwyh/2022/11/03/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ThreadLocal%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</link>
             <category term="后端" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
             <category term="Java并发" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
-            <pubDate>Wed, 02 Nov 2022 22:39:00 +0800</pubDate>
+            <pubDate>Thu, 03 Nov 2022 11:08:35 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;threadlocal是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#threadlocal是什么&#34;&gt;#&lt;/a&gt; ThreadLocal 是什么？&lt;/h1&gt;
 &lt;p&gt;ThreadLocal 可以理解为一份属于线程的本地变量，其实是一种空间换时间是思想，对于一个共享变量，多个线程要对其操作，那么肯定要加锁，但是加锁的话，就会有性能损耗。换一种思路，如果我们每个线程都有一份变量，那么是不是就没必要加锁了？但是这样会浪费一些空间，这就是空间换时间的思想，也是一种无锁编程的实现方式。即每个线程都有一个属于自己的空间，其他线程无法访问到。起到了线程隔离的作用。&lt;/p&gt;
 &lt;h1 id=&#34;threadlocal能干什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#threadlocal能干什么&#34;&gt;#&lt;/a&gt; ThreadLocal 能干什么？&lt;/h1&gt;
@@ -131,15 +131,15 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/11/01/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ReentryLock%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</guid>
+            <guid isPermalink="true">https://guyouwyh.github.io/guyouwyh/2022/11/02/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ReentryLock%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</guid>
             <title>ReentryLock源码分析</title>
-            <link>https://guyouwyh.github.io/guyouwyh/2022/11/01/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ReentryLock%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</link>
+            <link>https://guyouwyh.github.io/guyouwyh/2022/11/02/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/ReentryLock%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</link>
             <category term="后端" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
             <category term="Java并发" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
             <category term="锁" scheme="https://guyouwyh.github.io/guyouwyh/tags/%E9%94%81/" />
-            <pubDate>Tue, 01 Nov 2022 21:09:30 +0800</pubDate>
+            <pubDate>Wed, 02 Nov 2022 14:30:32 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;reentrylock的继承链&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reentrylock的继承链&#34;&gt;#&lt;/a&gt; ReentryLock 的继承链&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/guyouwyh/picture/main/20221101211500.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;ins&gt;可以看到，ReentrantLock 实现了 Lock 接口，有一个抽象内部类 Sync, 其继承了 AbstractQueuedSynchronizer 同步器，并且抽象内部类也有两个实现，一个是 FairSync, 一个是 NonFairSync。&lt;/ins&gt;&lt;/p&gt;
@@ -283,7 +283,7 @@ Node 结点的 waitStatus 状态为以上 5 中状态的一种。&lt;/p&gt;
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
             <category term="Java并发" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
-            <pubDate>Tue, 01 Nov 2022 19:58:40 +0800</pubDate>
+            <pubDate>Tue, 01 Nov 2022 21:58:25 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h1&gt;
 &lt;p&gt;LongAdder 的 JDK8 种提供的一个针对 Long 类型的原子操作。&lt;/p&gt;
 &lt;h1 id=&#34;核心原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心原理&#34;&gt;#&lt;/a&gt; 核心原理&lt;/h1&gt;
@@ -328,7 +328,7 @@ Cell 其实是 LongAdder 父类 Strip64 中的一个内部类，源码如下:&lt
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
             <category term="Java并发" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
-            <pubDate>Tue, 01 Nov 2022 17:19:19 +0800</pubDate>
+            <pubDate>Tue, 01 Nov 2022 19:58:32 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;strong&gt;在解析 Atomic 源码之前，先要介绍一些前置知识，比如 CAS、Java 的 Unsafe 类等&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;cas&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cas&#34;&gt;#&lt;/a&gt; CAS&lt;/h1&gt;
 &lt;p&gt;相信乐观锁都听说过，那么乐观锁是什么呢？&lt;br /&gt;
@@ -399,7 +399,7 @@ Unsafe 类中也提供了一个本地方法帮助我们计算字段的偏移量&
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/" />
             <category term="Java并发" scheme="https://guyouwyh.github.io/guyouwyh/categories/%E5%90%8E%E7%AB%AF/Java/Java%E5%B9%B6%E5%8F%91/" />
             <category term="Java" scheme="https://guyouwyh.github.io/guyouwyh/tags/Java/" />
-            <pubDate>Tue, 01 Nov 2022 12:10:48 +0800</pubDate>
+            <pubDate>Tue, 01 Nov 2022 17:15:50 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;jmm是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jmm是什么&#34;&gt;#&lt;/a&gt; JMM 是什么？&lt;/h1&gt;
 &lt;p&gt;对于学 Java 多线程的人来说，一定听说过 JMM, 那么 JMM 到底是什么呢？JMM 全称 (&lt;ins&gt;Java Memory Model&lt;/ins&gt;) 即 Java 内存模型。它是 Java 的一套规范，对上，是 JVM 和开发者之间的约定，对下，是 JVM 和编译器、CPU 之间的约定。&lt;/p&gt;
 &lt;h1 id=&#34;jmm是作用是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jmm是作用是什么&#34;&gt;#&lt;/a&gt; JMM 是作用是什么？&lt;/h1&gt;
